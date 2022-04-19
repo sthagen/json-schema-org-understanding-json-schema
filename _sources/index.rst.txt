@@ -24,9 +24,10 @@ validator---just yet.
 
 .. note::
 
-    This book describes JSON Schema draft 7. Earlier versions of JSON Schema
-    are not completely compatible with the format described here, but for the
-    most part, those differences are noted in the text.
+    This book describes JSON Schema draft 2020-12. Earlier versions of
+    JSON Schema are not completely compatible with the format
+    described here, but for the most part, those differences are noted
+    in the text.
 
 **Where to begin?**
 
@@ -46,10 +47,10 @@ validator---just yet.
   resources, including the official specification and tools for
   working with JSON Schema from various programming languages.
 
-- `jsonschema.net <http://jsonschema.net>`__ is an online application
-  run your own JSON schemas against example documents.  If you want to
-  try things out without installing any software, it's a very handy
-  resource.
+- There are a number of `online JSON Schema tools <https://json-schema.org/implementations.html#validator-web%20(online)>`__
+  that allow you to run your own JSON schemas against example
+  documents. These can be very handy if you want to try things out
+  without installing any software.
 
 .. only:: html
 
@@ -67,7 +68,7 @@ validator---just yet.
 .. only:: html
 
    There is also a `print version of this document
-   <http://json-schema.org/understanding-json-schema/UnderstandingJSONSchema.pdf>`__.
+   <UnderstandingJSONSchema.pdf>`__.
 
 .. toctree::
    :maxdepth: 1

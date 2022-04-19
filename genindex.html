@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Index &#8212; Understanding JSON Schema 7.0 documentation</title>
+    <title>Index &#8212; Understanding JSON Schema 2020-12 documentation</title>
     <link rel="stylesheet" href="_static/jsonschema.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -18,14 +18,25 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
+
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
-<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-1.12.4.min.js "></script>
 <script type="text/javascript" src="_static/js/jquery-fix.js "></script>
-<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
 <script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99695987-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-99695987-1');
+</script>
 
   </head><body>
   
@@ -47,7 +58,7 @@
         </button>
         <a class="navbar-brand" href="index.html">
           Understanding JSON Schema</a>
-        <span class="navbar-text navbar-version pull-left"><b>7.0</b></span>
+        <span class="navbar-text navbar-version pull-left"><b>2020-12</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
@@ -128,20 +139,31 @@
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
  | <a href="#U"><strong>U</strong></a>
+ | <a href="#W"><strong>W</strong></a>
  
 </div>
 <h2 id="Symbols">Symbols</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="structuring.html#index-6">$anchor</a>
+</li>
       <li><a href="reference/generic.html#index-1">$comment</a>
 </li>
-      <li><a href="structuring.html#index-2">$id</a>
+      <li><a href="structuring.html#index-8">$defs</a>
+</li>
+      <li><a href="structuring.html#index-11">$id</a>, <a href="structuring.html#index-4">[1]</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="structuring.html#index-1">$ref</a>
+      <li><a href="structuring.html#index-10">$recursiveAnchor</a>
 </li>
-      <li><a href="reference/schema.html#index-0">$schema</a>
+      <li><a href="structuring.html#index-10">$recursiveRef</a>
+</li>
+      <li><a href="structuring.html#index-7">$ref</a>, <a href="structuring.html#index-9">[1]</a>
+</li>
+      <li><a href="reference/schema.html#index-0">$schema</a>, <a href="reference/schema.html#index-1">[1]</a>
+</li>
+      <li><a href="reference/schema.html#index-2">$vocabularies</a>, <a href="reference/schema.html#index-3">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -149,9 +171,7 @@
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/array.html#index-1">additionalItems</a>
-</li>
-      <li><a href="reference/object.html#index-1">additionalProperties</a>
+      <li><a href="reference/object.html#index-3">additionalProperties</a>
 </li>
       <li><a href="reference/combining.html#index-1">allOf</a>
 </li>
@@ -159,20 +179,22 @@
 </li>
       <li><a href="reference/combining.html#index-2">anyOf</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/array.html#index-0">array</a>
 
       <ul>
+        <li><a href="reference/array.html#index-5">contains</a>
+</li>
         <li><a href="reference/array.html#index-1">items</a>
 </li>
-        <li><a href="reference/array.html#index-4">length</a>
+        <li><a href="reference/array.html#index-6">length</a>
 </li>
-        <li><a href="reference/array.html#index-2">list validation</a>
+        <li><a href="reference/array.html#index-2">tuple validation</a>
 </li>
-        <li><a href="reference/array.html#index-3">tuple validation</a>
+        <li><a href="reference/array.html#index-3">tuple validation; items</a>
 </li>
-        <li><a href="reference/array.html#index-5">uniqueness</a>
+        <li><a href="reference/array.html#index-4">tuple validation; unevaluatedItems</a>
+</li>
+        <li><a href="reference/array.html#index-7">uniqueness</a>
 </li>
       </ul></li>
   </ul></td>
@@ -181,7 +203,13 @@
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="structuring.html#index-2">base URI</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/boolean.html#index-0">boolean</a>
+</li>
+      <li><a href="structuring.html#index-11">bundling</a>
 </li>
   </ul></td>
 </tr></table>
@@ -189,28 +217,22 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/combining.html#index-0">combining schemas</a>
-
-      <ul>
-        <li><a href="reference/combining.html#index-1">allOf</a>
-</li>
-        <li><a href="reference/combining.html#index-2">anyOf</a>
-</li>
-        <li><a href="reference/combining.html#index-4">not</a>
-</li>
-        <li><a href="reference/combining.html#index-3">oneOf</a>
-</li>
-      </ul></li>
       <li><a href="reference/generic.html#index-1">comment</a>
 </li>
-      <li><a href="reference/conditionals.html#index-0">conditionals</a>
+      <li><a href="reference/conditionals.html#index-0">conditionals</a>, <a href="reference/conditionals.html#index-3">[1]</a>
 
       <ul>
-        <li><a href="reference/conditionals.html#index-0">else</a>
+        <li><a href="reference/conditionals.html#index-1">dependentRequired</a>
 </li>
-        <li><a href="reference/conditionals.html#index-0">if</a>
+        <li><a href="reference/conditionals.html#index-2">dependentSchemas</a>
 </li>
-        <li><a href="reference/conditionals.html#index-0">then</a>
+        <li><a href="reference/conditionals.html#index-3">else</a>
+</li>
+        <li><a href="reference/conditionals.html#index-3">if</a>
+</li>
+        <li><a href="reference/conditionals.html#index-4">implication</a>
+</li>
+        <li><a href="reference/conditionals.html#index-3">then</a>
 </li>
       </ul></li>
   </ul></td>
@@ -219,11 +241,13 @@
 </li>
       <li><a href="reference/generic.html#index-3">constant values</a>
 </li>
-      <li><a href="reference/array.html#index-1">contains</a>
+      <li><a href="reference/array.html#index-5">contains</a>
 </li>
       <li><a href="reference/non_json_data.html#index-2">contentEncoding</a>
 </li>
       <li><a href="reference/non_json_data.html#index-1">contentMediaType</a>
+</li>
+      <li><a href="reference/non_json_data.html#index-3">contentSchema</a>
 </li>
   </ul></td>
 </tr></table>
@@ -235,11 +259,13 @@
 </li>
       <li><a href="reference/string.html#index-5">date-time</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/generic.html#index-0">default</a>
 </li>
-      <li><a href="reference/object.html#index-5">dependencies</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/conditionals.html#index-2">dependentSchemas</a>
+</li>
+      <li><a href="reference/generic.html#index-0">deprecated</a>
 </li>
       <li><a href="reference/generic.html#index-0">description</a>
 </li>
@@ -249,21 +275,25 @@
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/conditionals.html#index-0">else</a>
+      <li><a href="reference/conditionals.html#index-3">else</a>
 </li>
       <li><a href="reference/string.html#index-6">email</a>
 </li>
       <li><a href="reference/generic.html#index-2">enum</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/generic.html#index-2">enumerated values</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/generic.html#index-0">examples</a>
 </li>
-      <li><a href="reference/numeric.html#index-3">exclusiveMaximum</a>
+      <li><a href="reference/numeric.html#index-2">exclusiveMaximum</a>
 </li>
-      <li><a href="reference/numeric.html#index-3">exclusiveMinimum</a>
+      <li><a href="reference/numeric.html#index-2">exclusiveMinimum</a>
+</li>
+      <li><a href="reference/object.html#index-4">extending</a>
+</li>
+      <li><a href="structuring.html#index-10">Extending Recursive Schemas</a>
 </li>
   </ul></td>
 </tr></table>
@@ -308,6 +338,8 @@
 </li>
         <li><a href="reference/string.html#index-10">uri-template</a>
 </li>
+        <li><a href="reference/string.html#index-9">uuid</a>
+</li>
       </ul></li>
   </ul></td>
 </tr></table>
@@ -327,7 +359,9 @@
 </li>
       <li><a href="reference/string.html#index-7">idn-hostname</a>
 </li>
-      <li><a href="reference/conditionals.html#index-0">if</a>
+      <li><a href="reference/conditionals.html#index-3">if</a>
+</li>
+      <li><a href="reference/conditionals.html#index-4">implication</a>
 </li>
       <li><a href="reference/numeric.html#index-0">integer</a>
 </li>
@@ -341,13 +375,17 @@
 </li>
       <li><a href="reference/string.html#index-9">iri-reference</a>
 </li>
-      <li><a href="reference/array.html#index-1">items</a>
+      <li><a href="reference/array.html#index-1">items</a>, <a href="reference/array.html#index-3">[1]</a>
 </li>
   </ul></td>
 </tr></table>
 
 <h2 id="J">J</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="structuring.html#index-5">JSON Pointer</a>
+</li>
+  </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/string.html#index-11">json-pointer</a>
 </li>
@@ -357,13 +395,13 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/numeric.html#index-3">maximum</a>
+      <li><a href="reference/numeric.html#index-2">maximum</a>
 </li>
-      <li><a href="reference/array.html#index-4">maxItems</a>
+      <li><a href="reference/array.html#index-6">maxItems</a>
 </li>
       <li><a href="reference/string.html#index-1">maxLength</a>
 </li>
-      <li><a href="reference/object.html#index-4">maxProperties</a>
+      <li><a href="reference/object.html#index-8">maxProperties</a>
 </li>
       <li><a href="reference/non_json_data.html#index-0">media</a>
 
@@ -372,18 +410,20 @@
 </li>
         <li><a href="reference/non_json_data.html#index-1">contentMediaType</a>
 </li>
+        <li><a href="reference/non_json_data.html#index-3">contentSchema</a>
+</li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/numeric.html#index-3">minimum</a>
+      <li><a href="reference/numeric.html#index-2">minimum</a>
 </li>
-      <li><a href="reference/array.html#index-4">minItems</a>
+      <li><a href="reference/array.html#index-6">minItems</a>
 </li>
       <li><a href="reference/string.html#index-1">minLength</a>
 </li>
-      <li><a href="reference/object.html#index-4">minProperties</a>
+      <li><a href="reference/object.html#index-8">minProperties</a>
 </li>
-      <li><a href="reference/numeric.html#index-2">multipleOf</a>
+      <li><a href="reference/numeric.html#index-1">multipleOf</a>
 </li>
   </ul></td>
 </tr></table>
@@ -393,18 +433,18 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/non_json_data.html#index-0">non-JSON data</a>
 </li>
-      <li><a href="reference/combining.html#index-4">not</a>
+      <li><a href="reference/combining.html#index-4">not</a>, <a href="reference/combining.html#index-5">[1]</a>
 </li>
       <li><a href="reference/null.html#index-0">null</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/numeric.html#index-0">number</a>, <a href="reference/numeric.html#index-1">[1]</a>
+      <li><a href="reference/numeric.html#index-0">number</a>
 
       <ul>
-        <li><a href="reference/numeric.html#index-2">multiple of</a>
+        <li><a href="reference/numeric.html#index-1">multiple of</a>
 </li>
-        <li><a href="reference/numeric.html#index-3">range</a>
+        <li><a href="reference/numeric.html#index-2">range</a>
 </li>
       </ul></li>
   </ul></td>
@@ -416,17 +456,19 @@
       <li><a href="reference/object.html#index-0">object</a>
 
       <ul>
-        <li><a href="reference/object.html#index-5">dependencies</a>
+        <li><a href="reference/object.html#index-1">properties</a>, <a href="reference/object.html#index-3">[1]</a>
 </li>
-        <li><a href="reference/object.html#index-1">properties</a>
+        <li><a href="reference/object.html#index-4">properties; additionalProperties</a>
 </li>
-        <li><a href="reference/object.html#index-3">property names</a>
+        <li><a href="reference/object.html#index-5">properties; extending</a>
 </li>
-        <li><a href="reference/object.html#index-6">regular expression</a>
+        <li><a href="reference/object.html#index-2">properties; regular expression</a>
 </li>
-        <li><a href="reference/object.html#index-2">required properties</a>
+        <li><a href="reference/object.html#index-7">property names</a>
 </li>
-        <li><a href="reference/object.html#index-4">size</a>
+        <li><a href="reference/object.html#index-6">required properties</a>
+</li>
+        <li><a href="reference/object.html#index-8">size</a>
 </li>
       </ul></li>
   </ul></td>
@@ -441,13 +483,15 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/string.html#index-2">pattern</a>
 </li>
-      <li><a href="reference/object.html#index-6">patternProperties</a>
+      <li><a href="reference/object.html#index-2">patternProperties</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/object.html#index-1">properties</a>
 </li>
-      <li><a href="reference/object.html#index-3">propertyNames</a>
+      <li><a href="reference/conditionals.html#index-1">property dependentRequired</a>
+</li>
+      <li><a href="reference/object.html#index-7">propertyNames</a>
 </li>
   </ul></td>
 </tr></table>
@@ -455,15 +499,21 @@
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/string.html#index-12">regex</a>
+      <li><a href="reference/generic.html#index-0">readOnly</a>
 </li>
-      <li><a href="reference/regular_expressions.html#index-0">regular expressions</a>
+      <li><a href="structuring.html#index-9">recursion</a>
+</li>
+      <li><a href="reference/string.html#index-12">regex</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/regular_expressions.html#index-0">regular expressions</a>
+</li>
       <li><a href="reference/string.html#index-11">relative-json-pointer</a>
 </li>
-      <li><a href="reference/object.html#index-2">required</a>
+      <li><a href="reference/object.html#index-6">required</a>
+</li>
+      <li><a href="structuring.html#index-3">retrieval URI</a>
 </li>
   </ul></td>
 </tr></table>
@@ -475,9 +525,29 @@
     schema
 
       <ul>
-        <li><a href="reference/schema.html#index-0">keyword</a>
+        <li><a href="reference/schema.html#index-2">$vocabularies</a>
+</li>
+        <li><a href="reference/schema.html#index-3">$vocabularies; guidelines</a>
+</li>
+        <li><a href="reference/schema.html#index-1">keyword</a>
 </li>
       </ul></li>
+      <li><a href="reference/combining.html#index-0">schema composition</a>
+
+      <ul>
+        <li><a href="reference/combining.html#index-1">allOf</a>
+</li>
+        <li><a href="reference/combining.html#index-2">anyOf</a>
+</li>
+        <li><a href="reference/combining.html#index-4">not</a>
+</li>
+        <li><a href="reference/combining.html#index-3">oneOf</a>
+</li>
+        <li><a href="reference/combining.html#index-5">subschema independence</a>
+</li>
+      </ul></li>
+      <li><a href="structuring.html#index-1">schema identification</a>
+</li>
       <li><a href="reference/string.html#index-0">string</a>
 
       <ul>
@@ -492,13 +562,40 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="structuring.html#index-0">structure</a>
 </li>
+      <li>
+    structuring
+
+      <ul>
+        <li><a href="structuring.html#index-8">$defs</a>
+</li>
+        <li><a href="structuring.html#index-7">$ref</a>
+</li>
+        <li><a href="structuring.html#index-10">Extending Recursive Schemas</a>
+</li>
+        <li><a href="structuring.html#index-2">base URI</a>
+</li>
+        <li><a href="structuring.html#index-4">base URI; $id</a>
+</li>
+        <li><a href="structuring.html#index-3">base URI; retrieval URI</a>
+</li>
+        <li><a href="structuring.html#index-11">bundling; $id</a>
+</li>
+        <li><a href="structuring.html#index-9">recursion; $ref</a>
+</li>
+        <li><a href="structuring.html#index-1">schema identification</a>
+</li>
+        <li><a href="structuring.html#index-6">subschema identification; $anchor</a>
+</li>
+        <li><a href="structuring.html#index-5">subschema identification; JSON Pointer</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/conditionals.html#index-0">then</a>
+      <li><a href="reference/conditionals.html#index-3">then</a>
 </li>
       <li><a href="reference/string.html#index-5">time</a>
 </li>
@@ -523,15 +620,29 @@
 <h2 id="U">U</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="reference/array.html#index-5">uniqueItems</a>
+      <li><a href="reference/array.html#index-4">unevaluatedItems</a>
 </li>
-      <li><a href="reference/string.html#index-9">uri</a>
+      <li><a href="reference/object.html#index-5">unevaluatedProperties</a>
+</li>
+      <li><a href="reference/array.html#index-7">uniqueItems</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/string.html#index-9">uri</a>
+</li>
       <li><a href="reference/string.html#index-9">uri-reference</a>
 </li>
       <li><a href="reference/string.html#index-10">uri-template</a>
+</li>
+      <li><a href="reference/string.html#index-9">uuid</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/generic.html#index-0">writeOnly</a>
 </li>
   </ul></td>
 </tr></table>
@@ -549,9 +660,9 @@
       
     </p>
     <p>
-        &copy; Copyright 2013-2016 Michael Droettboom, Space Telescope Science Institute; © 2016-2020 Michael Droettboom.<br/>
-      Last updated on Apr 12, 2020.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+        &copy; Copyright 2013-2016 Michael Droettboom, Space Telescope Science Institute; © 2016-2022 Michael Droettboom.<br/>
+      Last updated on Apr 19, 2022.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.6.<br/>
     </p>
   </div>
 </footer>
